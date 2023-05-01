@@ -6,7 +6,7 @@ module.exports = function () {
       return resolve();
     }
     mongoose.connect(
-      `mongodb+srv://root:7549499597@cluster0.2zzsa.mongodb.net/netrockdeals?retryWrites=true&w=majority`
+      `MONGODB_URI_GOES_HERE`
     );
 
     mongoose.connection.on("connected", () => {
